@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}default title{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'snippet/css/boot.min.css' %}">
+    <script src="{% static 'snippet/js/jq.js' %}"></script>
+  </head>
+  <body>
+    {% include 'codeviewer/nav.html' %}
+    {% block content %}
+    <p>default content</p>
+    {% endblock %}
+    <hr>
+    {% block footer %}
+    <p>default footer</p>
+    {% endblock %}
+  </body>
+</html>

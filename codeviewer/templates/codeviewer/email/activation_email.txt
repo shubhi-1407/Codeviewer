@@ -1,0 +1,4 @@
+Hello {{username}} !
+To confirm your registration visit the following link:
+{{protocol}}://{{domain}}{%url 'codeviewer:activate' uid token %}
+Welcome to CodeViewer
